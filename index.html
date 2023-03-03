@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem | Joakim Lindgren</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/bootstrap.bundle.js"></script>
+    <script defer src="https://kit.fontawesome.com/8cafc277ac.js" crossorigin="anonymous"></script>
+</head>
+<body onload="document.body.style.opacity='1'">
+    <header>
+        <div class="profile">
+            <a href="./index.html"><img src="./images/profilephoto.jpg" id="profilephoto" alt="portrait"></a>
+            <h1>Joakim Lindgren</h1>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/jetteheftig/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/joakim-lindgren-4b361816a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+             
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="scrollFunction1()"><i class="fa-solid fa-house"></i> Hem</button>
+                </li>
+                <li>
+                    <button onclick="scrollFunction2()"><i class="fa-solid fa-user"></i> Om mig</button>
+                </li>
+                <li>
+                    <a href="./portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+                </li>
+                <li class="logged-out">
+                    <button data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-key"></i> Logga in</button>
+                </li>
+                <li class="logged-in hide">
+                    <button onclick="logout()"><i class="fa-solid fa-key"></i> Logga ut</button>
+                </li>
+                <li>
+                    <p class="welcome-user"></p>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- RESPONSIVE NAVBAR --> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="responsivenav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html#home">Joakim Lindgren</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="scrollFunction1()"><i class="fa-solid fa-house"></i> Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" onclick="scrollFunction2()"><i class="fa-solid fa-user"></i> Om mig</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+                        </li>
+                        <li class="nav-item logged-out">
+                            <button class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-key"></i> Logga in</button>
+                        </li>
+                        <li class="nav-item logged-in hide">
+                            <button class="nav-link" onclick="logout()"><i class="fa-solid fa-key"></i> Logga ut</button>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link welcome-user" id="welcome-user"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- RESPONSIVE NAVBAR END -->
+    </header>
+    
+
+    <main>
+
+        <section class="section section-1" id="home">
+            <div class="section__content">
+                <h1>Hej, mitt namn är Joakim!</h1>
+                <p>
+                    Jag är en 30 år gammal backend-utvecklare som är nyfiken och nördig på det mesta inom tech.
+                </p>
+                <p>
+                    Jag har en stor passion för skidåkning, fotboll, cykling och musik (både skapa och lyssna), och har även tävlat på internationell nivå inom alpin skidåkning. 
+                    De senaste 10 åren har jag jobbat inom cykelbranschen med både service, försäljning och E-handel.
+                </p>
+                <p>
+                    Nu känner jag att det är dags att ta nästa steg i min karriär och utveckla mig inom IT-branschen då det är något jag alltid varit intresserad av. Sedan jag var liten och min familj fick sin första hemdator så har jag varit fascinerad 
+                    över allt man kan göra med den - oavsett om det kommer till att spela, skapa musik, programmera eller bara surfa runt på nätet.
+                </p>
+                <p>
+                    Jag ser fram emot att få jobba på en arbetsplats med ett bra team där jag stimuleras 
+                    och får utvecklas som person och utvecklare.
+                </p>
+                <p>För att läsa mer, scrolla ner <i class="fa-solid fa-arrow-turn-down"></i></p>
+            </div>
+        </section>
+        <section class="section section-2">
+            <div class="container" id="aboutme">
+                <div class="row">
+                    <div class="col">
+                        <div class="section__content card">
+                            <h2>Utbildning</h2>
+                            <div class="card-info">
+                                <p>2022 - 2024 <span style="font-weight: 500; color: rgb(0, 173, 181)">Cloudutvecklare Azure</span>, Jensen Yrkeshögskola</p>
+                                <p>2008 - 2012 <span style="font-weight: 500; color: rgb(0, 173, 181)">Samhällsprogrammet</span>, Alpint riksidrottsgymnasium i Malung</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="section__content card">
+                            <h2>Kunskaper</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">HTML</div>
+                                    <div class="col">CSS</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">JavaScript</div>
+                                    <div class="col">TypeScript</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">React</div>
+                                    <div class="col">Bootstrap</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">SQL</div>
+                                    <div class="col">C#</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">C++</div>
+                                    <div class="col">Rust</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Java</div>
+                                    <div class="col">Git</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Azure</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="section__content card">
+                            <h2>Arbetslivserfarenheter</h2>
+                            <div class="card-info">
+                                <p>
+                                    2019 - 2023 <span style="font-weight: 500; color: rgb(0, 173, 181)">TCM Tyresö Cykelmagasin</span>
+                                    , servicetekniker, produktadministratör e-handel
+                                </p>
+                                <p>
+                                    2012 - 2019 <span style="font-weight: 500; color: rgb(0, 173, 181)">Länna Sport</span>
+                                    , verkstadsansvarig
+                                </p>
+                                <p>
+                                    2011 <span style="font-weight: 500; color: rgb(0, 173, 181)">Grävbolaget AB</span>
+                                    , sommarjobb som grovarbetare
+                                </p>
+                                <p>
+                                    2010 <span style="font-weight: 500; color: rgb(0, 173, 181)">Veidekke Entreprenad AB</span>
+                                    , sommarjobb som grovarbetare
+                                </p>
+                                <p>
+                                    2008 - 2009 <span style="font-weight: 500; color: rgb(0, 173, 181)">JM Entreprenad AB</span>
+                                    , sommarjobb som grovarbetare
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="section__content card">
+                            <h2>Kontakt</h2>
+                            <div class="card-info">
+                                <p>Joakim Lindgren</p>
+                                <p>LM Ericssons väg 10</p>
+                                <p>135 39 Tyresö</p>
+                                <p>17 juni 1992</p>
+                                <p>076-871 70 40</p>
+                                <a href="mailto:joakim.jl.lindgren@gmail.com" id="email">joakim.jl.lindgren@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- LOGIN -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div>
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <div class="form-title text-center">
+                    <h4>Logga in</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="username1"placeholder="Användarnamn...">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password1" placeholder="Lösenord...">
+                    </div>
+                        <button type="button" class="modal-login-btn" id="login-confirm" aria-hidden="true">Logga in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
