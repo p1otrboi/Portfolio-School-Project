@@ -23,6 +23,7 @@ Den här hemsidan är byggd som första inlämningsuppgiften i kursen Grundlägg
 ![screenshot3](https://github.com/p1otrboi/Portfolio-School-Project/blob/master/images/Screenshot_3.png)
 ![screenshot4](https://github.com/p1otrboi/Portfolio-School-Project/blob/master/images/Screenshot_4.png)
 
+<!-- 
 ## Process
 
 Efter inledande kurser i .NET/C# med fokus på web-api:er och databaser så kändes det rätt tråkigt att börja hålla på med HTML, och de absoluta grunderna i detta lärde jag mig någorlunda för ca 15 år sedan tillsammans med på sin höjd några rader CSS, för att sedan inte röra det sen dess. Efter att vi kom in på JavaScript och nosade på React så blev det lite intressantare då JS kändes ganska enkelt att greppa när man kommer från C# då syntaxen och OOP-elementen är ganska lika.
@@ -38,3 +39,4 @@ För "login"-funktionen så accepteras alla inloggningar med lösenordet **PassW
 ## Utvärdering
 
 Som alltid tidigare så har jag lärt mig absolut mest av att göra uppgifter efter riktlinjer. Det ger mig utrymme att experimentera och prova mig fram, och därigenom springa på många vanliga problem som leder till att man får söka information angående dessa med resultatet att folk pekar en i bättre riktningar. Så från att ha börjat med att tycka det var tråkigt med frontend, så börjar det bli inspirerande och kul då man börjar lära sig hur man kan översätta sina idéer och faktiskt få resultat som liknar dem.
+-->
